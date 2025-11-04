@@ -21,21 +21,51 @@
     <main>
         <h2>Einblicke in die Welt des autonomen Fahrens</h2>
         <p>
-            Klicke auf ein Bild, um mehr über die Technologie zu erfahren:
+            Klicke oder drücke <strong>Enter</strong> auf ein Bild, um mehr über die Technologie zu erfahren:
         </p>
 
         <div>
-            <img src="images/auto1.jpg" alt="Autonomes Fahrzeug" width="400" height="250" onclick="showInfo('auto')">
-            <img src="images/ai_brain.jpg" alt="Künstliche Intelligenz" width="400" height="250" onclick="showInfo('ai')">
-            <img src="images/lidar.jpg" alt="Lidar-Sensor" width="400" height="250" onclick="showInfo('lidar')">
-            <img src="images/highway.jpg" alt="Autonomer Verkehr" width="400" height="250" onclick="showInfo('traffic')">
+            <img src="images/auto1.jpg" 
+                alt="Autonomes Fahrzeug" 
+                width="400" height="250" 
+                tabindex="0"
+                role="button"
+                onclick="showInfo('auto')" 
+                onkeydown="if(event.key === 'Enter'){ showInfo('auto'); }">
+
+            <img src="images/ai_brain.jpg" 
+                alt="Künstliche Intelligenz" 
+                width="400" height="250" 
+                tabindex="0"
+                role="button"
+                onclick="showInfo('ai')" 
+                onkeydown="if(event.key === 'Enter'){ showInfo('ai'); }">
+
+            <img src="images/lidar.jpg" 
+                alt="Lidar-Sensor" 
+                width="400" height="250" 
+                tabindex="0"
+                role="button"
+                onclick="showInfo('lidar')" 
+                onkeydown="if(event.key === 'Enter'){ showInfo('lidar'); }">
+
+            <img src="images/highway.jpg" 
+                alt="Autonomer Verkehr" 
+                width="400" height="250" 
+                tabindex="0"
+                role="button"
+                onclick="showInfo('traffic')" 
+                onkeydown="if(event.key === 'Enter'){ showInfo('traffic'); }">
         </div>
 
         <p id="infoText" style="margin-top: 20px; font-weight: bold; color: #009999;"></p>
     </main>
 
     <footer>
-        <p>&copy; 2025 FH St. Pölten | Smart Engineering | Erstellt von Akram Bensahili</p>
+        <p>
+            &copy; 2025 FH St. Pölten | Smart Engineering | Erstellt von Akram Bensahili | 
+            <a href="https://akrambensahili2.github.io/autonomes-fahren/" target="_blank">Online-Version</a>
+        </p>
     </footer>
 </body>
 </html>
