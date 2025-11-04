@@ -34,16 +34,25 @@
         </p>
 
         <p>
-            Klicke auf das Bild, um mehr über die Sensorik zu erfahren:
+            Klicke oder drücke <strong>Enter</strong> auf das Bild, um mehr über die Sensorik zu erfahren:
         </p>
 
-        <img src="images/lidar.jpg" alt="Lidar-Sensor eines autonomen Autos" width="400" height="250" onclick="showInfo('lidar')">
-        <p id="infoText" style="margin-top: 20px; font-weight: bold; color: #009999;"></p>
+        <img src="images/lidar.jpg" 
+            alt="Lidar-Sensor eines autonomen Autos" 
+            width="400" height="250"
+            tabindex="0"
+            role="button"
+            onclick="showInfo('lidar')" 
+            onkeydown="if(event.key === 'Enter'){ showInfo('lidar'); }">
 
+        <p id="infoText" style="margin-top: 20px; font-weight: bold; color: #009999;"></p>
     </main>
 
     <footer>
-        <p>&copy; 2025 FH St. Pölten | Smart Engineering | Erstellt von Akram Bensahili</p>
-    </footer>    
+        <p>
+            &copy; 2025 FH St. Pölten | Smart Engineering | Erstellt von Akram Bensahili | 
+            <a href="https://akrambensahili2.github.io/autonomes-fahren/" target="_blank">Online-Version</a>
+        </p>
+    </footer> 
 </body>
 </html>
