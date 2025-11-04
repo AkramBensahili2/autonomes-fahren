@@ -7,16 +7,23 @@ body {
 }
 
 header {
-    background-color: #009999;
-    color: white;
+    background-color: #007a7a;
+    color: #ffffff;
     padding: 1em;
     text-align: center;
 }
 
 nav a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     margin: 0 10px;
+    font-weight: 600;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #fffae5;
+    text-decoration: underline;
 }
 
 main {
@@ -25,8 +32,16 @@ main {
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #222; 
+    color: #ffffff;
     text-align: center;
     padding: 10px;
+}
+
+main div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
 }
