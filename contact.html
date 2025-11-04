@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt – Autonomes Fahren & KI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Kontakt</h1>
+        <nav>
+            <a href="index.html">Start</a> |
+            <a href="about.html">Über</a> |
+            <a href="gallery.html">Galerie</a> |
+            <a href="contact.html">Kontakt</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Fragen oder Anregungen?</h2>
+        <p>
+            Wir freuen uns über Feedback zu unserer Website über autonomes Fahren und KI.
+        </p>
+
+        <form onsubmit="thankUser(event)">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">E-Mail:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Nachricht:</label><br>
+            <textarea id="message" name="message" rows="4" cols="40" required></textarea><br><br>
+
+            <button type="submit">Absenden</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 FH St. Pölten | Smart Engineering | Erstellt von Akram Bensahili</p>
+    </footer>    
+
+    <script src="script.js"></script>
+</body>
+</html>
