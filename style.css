@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f6f8;
-    color: #333;
+    color: #333333;
     margin: 0;
     padding: 0;
 }
@@ -31,17 +31,36 @@ main {
     line-height: 1.6;
 }
 
-footer {
-    background-color: #222; 
-    color: #ffffff;
-    text-align: center;
-    padding: 10px;
-}
-
 main div {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     justify-items: center;
     margin-top: 20px;
+}
+
+footer {
+    background-color: #222222;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: #66ccff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover,
+footer a:focus {
+    color: #99e6ff;
+    text-decoration: underline;
+}
+
+a:focus,
+button:focus,
+img[tabindex="0"]:focus {
+    outline: 3px solid #fffae5;
+    outline-offset: 3px;
 }
